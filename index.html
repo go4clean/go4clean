@@ -171,16 +171,19 @@
                     <img src="SRC/totebag.jpeg" alt="Tote Bag">
                     <h4>Tote Bag</h4>
                     <p>50 Poin</p>
+                    <button class="btn-redeem" onclick="redeemPoints('Tote Bag', 50)">Menukar Poin</button>
                 </div>
                 <div class="reward-item">
                     <img src="SRC/vocher.jpeg" alt="Voucher Belanja">
                     <h4>Voucher Belanja</h4>
                     <p>100 Poin</p>
+                    <button class="btn-redeem" onclick="redeemPoints('Voucher Belanja', 100)">Menukar Poin</button>
                 </div>
                 <div class="reward-item">
-                    <img src="SRC/tumbler.jpeg" alt="Tumbler">
+                    <img src="SRC/tumbler.png" alt="Tumbler">
                     <h4>Tumbler</h4>
                     <p>75 Poin</p>
+                    <button class="btn-redeem" onclick="redeemPoints('Tumbler', 75)">Menukar Poin</button>
                 </div>
             </div>
         </div>
@@ -226,13 +229,36 @@
             <p>Terhubung dengan kami melalui media sosial:</p>
             <div class="social-media-icons">
                 <a href="https://www.instagram.com/go4.clean?igsh=MWQ4OWpwd3FlM3RkMw%3D%3D&utm_source=qr" target="_blank"><img src="SRC/instagram.svg" alt="Instagram"></a>
-
-                <a href="#"><img src="SRC/20673.png" alt="Facebook"></a>
-                <a href="#"><img src="SRC/twitter.svg" alt="Twitter"></a>
             </div>
         </div>
     </section>
-
+    <section id="clients" class="clients-section section-with-bg">
+        <div class="container">
+            <h2>OUR CLIENT</h2>
+            <div class="clients-grid">
+                <div class="client-item">
+                    <img src="SRC/client1.png" alt="Client 1">
+                    <h4>PT. Eco Solutions</h4>
+                    <p>Partner dalam pengelolaan sampah organik</p>
+                </div>
+                <div class="client-item">
+                    <img src="SRC/client2.png" alt="Client 2">
+                    <h4>Green Recycling Co.</h4>
+                    <p>Mitra daur ulang plastik dan kertas</p>
+                </div>
+                <div class="client-item">
+                    <img src="SRC/client3.png" alt="Client 3">
+                    <h4>Clean City Initiative</h4>
+                    <p>Program kebersihan kota berkelanjutan</p>
+                </div>
+                <div class="client-item">
+                    <img src="SRC/client4.png" alt="Client 4">
+                    <h4>Waste Management Plus</h4>
+                    <p>Solusi pengelolaan sampah terpadu</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <p>&copy; 2025 Go4Clean. All rights reserved.</p>
@@ -247,6 +273,18 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script src="script.js"></script>
+
+    <!-- Modal Popup untuk konfirmasi penukaran poin -->
+    <div id="redeemModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Konfirmasi Penukaran Poin</h2>
+            <p id="modalMessage">Selamat kamu sudah menukar poin mu silahkan cek email mu untuk melihat prosedur penerimaan</p>
+            <button class="btn-primary" onclick="closeModal()">OK</button>
+        </div>
+    </div>
 </body>
 </html>
 
